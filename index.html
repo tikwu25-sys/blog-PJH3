@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的个人主页</title>
+    <style>
+        /* 这里是CSS样式区：负责网页长什么样 */
+        
+        /* 1. 全局设置：让页面看起来干净 */
+        body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #333;
+        }
+
+        /* 2. 卡片容器：就像手机屏幕一样的白色卡片 */
+        .profile-card {
+            background: white;
+            width: 90%;
+            max-width: 400px; /* 限制最大宽度，像手机APP */
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            overflow: hidden;
+            padding-bottom: 30px;
+        }
+
+        /* 3. 顶部背景图区 */
+        .header-cover {
+            background-color: #4a90e2;
+            height: 120px;
+            width: 100%;
+        }
+
+        /* 4. 头像区域 */
+        .avatar-container {
+            text-align: center;
+            margin-top: -60px; /* 让头像往上浮动，压住背景条 */
+        }
+        .avatar {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%; /* 圆形头像 */
+            border: 5px solid white;
+            object-fit: cover;
+            background-color: #ddd; /* 如果图片加载失败显示的灰色 */
+        }
+
+        /* 5. 名字和简介 */
+        .info-section {
+            text-align: center;
+            padding: 10px 20px;
+        }
+        .name {
+            font-size: 24px;
+            font-weight: bold;
+            margin: 10px 0 5px 0;
+        }
+        .bio {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        /* 6. 标签（比如爱好、职业） */
+        .tags {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 25px;
+        }
+        .tag {
+            background-color: #e3f2fd;
+            color: #4a90e2;
+            padding: 5px 12px;
+            border-radius: 15px;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        /* 7. 成长经历部分 */
+        .story-section {
+            padding: 0 30px;
+            text-align: left;
+        }
+        .section-title {
+            font-size: 16px;
+            font-weight: bold;
+            border-left: 4px solid #4a90e2;
+            padding-left: 10px;
+            margin-bottom: 15px;
+        }
+        .timeline-item {
+            margin-bottom: 15px;
+            padding-bottom: 15px;
+            border-bottom: 1px dashed #eee;
+        }
+        .year {
+            font-weight: bold;
+            color: #4a90e2;
+            font-size: 14px;
+        }
+        .event {
+            font-size: 13px;
+            color: #555;
+            margin-top: 5px;
+            line-height: 1.5;
+        }
+
+        /* 8. 底部按钮 */
+        .footer-btn {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .contact-btn {
+            background-color: #333;
+            color: white;
+            padding: 10px 40px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-size: 14px;
+            transition: 0.3s;
+        }
+        .contact-btn:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="profile-card">
+        
+        <div class="header-cover"></div>
+
+        <div class="avatar-container">
+            < img src="avatar.jpg" alt="我的头像" class="avatar">
+        </div>
+
+        <div class="info-section">
+            <div class="name">潘嘉欢</div> <div class="bio">喜欢喊妈妈的瓦学弟<br>这是我的个人成长空间</div>
+        </div>
+
+        <div class="tags">
+            <span class="tag">📍 深圳</span>
+            <span class="tag">💻 喜欢看篇</span>
+            <span class="tag">📷 摄影爱好者</span>
+        </div>
+
+        <div class="story-section">
+            <div class="section-title">我的成长轨迹</div>
+            
+            <div class="timeline-item">
+                <div class="year">2024 - 至今</div>
+                <div class="event">在高中部当主席试图诱骗学妹，但没成功</div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="year">2021 - 2024</div>
+                <div class="event">在宝安中学初中部，是班里最嘉豪的</div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="year">2015 - 2021</div>
+                <div class="event">在天骄小学当魔丸</div>
+            </div>
+        </div>
+
+        <div class="footer-btn">
+            <a href=" " class="contact-btn">微信号：Pjh0123210</a >
+        </div>
+
+    </div>
+
+</body>
+</html>
